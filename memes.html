@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Meme Picker</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .meme-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+        .meme-video-container { position: relative; width: 250px; background: #000; border-radius: 8px; overflow: hidden; }
+        .meme-video { width: 100%; height: 100%; cursor: pointer; display: block; }
+        .meme-video-controls {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .play-pause-btn { color: #fff; font-size: 20px; cursor: pointer; }
+        .seek-bar { width: 150px; cursor: pointer; }
+        .seek-bar input { width: 100%; }
+    </style>
+</head>
+<body>
+    <h2>Pick a Meme!</h2>
+    <div id="memeContainer" class="meme-container"></div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
